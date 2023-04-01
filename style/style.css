@@ -45,7 +45,7 @@
 
 
 .mycr{
-	background-color: #1a1526;
+	background-color: #13121c;
 	color: white;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .card{
-	background-color: #1a1526;
+	background-color: #13121c;
 	opacity: 0.2;
 	border-color: transparent;
 	color: white;
@@ -160,6 +160,7 @@
   padding: 50px;
   border-radius: 30px 30px 30px 30px;
   font-family: 'Roboto Mono', monospace;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .text-center{
@@ -211,7 +212,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 .footer {
   position: relative;
   width: 100%;
-  background: #01ef03;
+  background: black;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -328,7 +329,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 
 .section-contact {
     padding: 120px;
-		background-color: #1a1526;
+		background-color: #13121c;
 }
 
 .section-contact .header-section .title {
@@ -394,7 +395,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
     padding-bottom: 15px;
     font-size: 15px;
     font-weight: 700;
-    background-color: #1a1526;
+    background-color: #13121c;
     text-transform: uppercase;
 		transition: border .3s;
 }
@@ -519,6 +520,25 @@ border-bottom: 2px solid #5918df;}
 
 
 
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 14%;
+  padding-right: 14%;
+    text-align: justify;
+
+}
 
 
 
