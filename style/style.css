@@ -60,9 +60,9 @@
   color: #01ef03;
 }
 
-.nk{
-	background-color: red;
-}
+
+
+
 
 .nav-item{
   margin-right: 20px;
@@ -201,7 +201,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 .footer {
   position: relative;
   width: 100%;
-  background: black;
+  background: #01ef03;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -357,9 +357,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
     color: white;
 }
 
-.section-contact .form-contact {
 
-}
 
 .section-contact .form-contact .single-input {
 	position: relative;
@@ -371,7 +369,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 	position: absolute;
     top: 5px;
     left: 15px;
-    color: #5918df;
+    color: #01ef03;
 }
 
 
@@ -380,7 +378,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 .section-contact .form-contact .single-input textarea {
 	width: 100%;
     border: none;
-    border-bottom: 2px solid #5918df;
+    border-bottom: 2px solid #01ef03;
     color: white;
     padding-left: 50px;
     padding-bottom: 15px;
@@ -393,7 +391,7 @@ overflow: hidden; /* Ensures the content is not revealed until the animation */
 
 
 .section-contact .form-contact .single-input input:hover{
-border-bottom: 2px solid #01ef03;}
+border-bottom: 2px solid #5918df;}
 
 
 
@@ -403,7 +401,8 @@ border-bottom: 2px solid #01ef03;}
 }
 
 .section-contact .form-contact .single-input textarea:hover {
-border-bottom: 2px solid #01ef03;}
+border-bottom: 2px solid #5918df;}
+
 
 
 .section-contact .form-contact .single-input input:focus,
@@ -419,7 +418,7 @@ border-bottom: 2px solid #01ef03;}
 .section-contact .form-contact .submit-input input {
 	margin-top: 40px;
     padding: 15px 50px;
-    background-color: #5918df;
+    background-color: #01ef03;
     color: #fff;
     border: none;
     font-weight: 700;
@@ -427,7 +426,7 @@ border-bottom: 2px solid #01ef03;}
 }
 
 .section-contact .form-contact .submit-input input:hover {
-	background-color: #01ef03;
+	background-color: #5918df;
 }
 
 @media (max-width: 575.99px) {
