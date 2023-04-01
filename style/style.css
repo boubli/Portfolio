@@ -10,6 +10,12 @@
   font-family: futura;
   src: url(fonts/FuturaLT-Book.woff);
 }
+
+@font-face {
+  font-family: Aquenos;
+  src: url(fonts/NoiseStorm-Light.woff2);
+}
+
 @font-face {
   font-family: Great;
   src: url(fonts/GreatDayPersonalUse-14M2.woff2);
@@ -54,6 +60,7 @@
  	font-family: mono ;
  	border: none;
  	border-radius: 5px 5px 5px 5px;
+  margin-top: -32px;
 }
 
 .nav-link:hover{
@@ -102,6 +109,10 @@
 .code{
 	color: #01ef03;
 	font-family: mono;
+}
+
+.codeT{
+  color: #01ef03;
 }
 
 .name{	color: #5918df;
@@ -485,10 +496,15 @@ border-bottom: 2px solid #5918df;}
 }
 
 .navbar-brand{
-  margin-left: 20px;
+  margin-left: 4%;
 }
 
 .navbar-brand p{
   color: white;
-  font-family: Great;
+  font-family: Aquenos ;
+  font-size: 40px;
 }
+
+
+
+
