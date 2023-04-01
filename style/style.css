@@ -86,7 +86,6 @@
 	padding: 50px;
 	color: white;
 	padding-top: 20px;
-	
 }
 
 
@@ -156,7 +155,7 @@
 }
 
 .mycon{
-  background-color: #1a1526;
+  background-color: #13121c;
   display: block;
   padding: 50px;
   border-radius: 30px 30px 30px 30px;
@@ -506,47 +505,18 @@ border-bottom: 2px solid #5918df;}
 }
 
 
-.skillbar {
-  margin-bottom: 10px;
-  height: 30px;
-  position: relative;
-  background: #f9f9f9;
-  border-radius: 50px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+.btnclose{
+  color: red;
+}
+.btnclose2{
+  color: #44bd32;
 }
 
-.skillbar-title {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+
+.btnclose1{
+  color: #f39c12;
 }
 
-.skillbar-bar {
-  height: 100%;
-  border-radius: 50px;
-  background: #f54b24;
-  width: 0;
-  position: relative;
-  animation: skillbar 2s ease-out forwards;
-}
-
-.skillbar-bar-1 {
-  animation-delay: 0.2s;
-}
-
-.skillbar-bar-2 {
-  animation-delay: 0.4s;
-}
-
-@keyframes skillbar {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 
 
 
