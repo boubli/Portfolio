@@ -29,6 +29,15 @@
 	<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
 	<title>BOUBLI | Portfolio</title>
 	<link rel="icon" type="image/x-icon" href="images/ic.ico">
+	<script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Ie14xBvqGZ4JqMA1W");
+   })();
+</script>
+<script src="js/main.js" ></script>
 </head>
 
 <body>
@@ -305,36 +314,36 @@
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-user"></i>
-								<input type="text" name="name" placeholder="ENTER YOUR NAME">
+								<input type="text" id="name" placeholder="ENTER YOUR NAME" required>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-envelope"></i>
-								<input type="text" name="email" placeholder="ENTER YOUR EMAIL">
+								<input type="text" id="email" placeholder="ENTER YOUR EMAIL" required>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-phone"></i>
-								<input type="text" name="phoneNumber" placeholder="ENTER YOUR PHONE NUMBER">
+								<input type="text" id="phoneNumber" placeholder="ENTER YOUR PHONE NUMBER">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-check"></i>
-								<input type="text" name="subject" placeholder="ENTER YOUR SUBJECT">
+								<input type="text" id="subject" placeholder="ENTER YOUR SUBJECT">
 							</div>
 						</div>
 						<div class="col-12">
 							<div class="single-input">
 								<i class="fas fa-comment-dots"></i>
-								<textarea placeholder="ENTER YOUR MESSAGE"></textarea>
+								<textarea id="message" placeholder="ENTER YOUR MESSAGE" required></textarea>
 							</div>
 						</div>
 						<div class="col-12">
 							<div class="submit-input text-center">
-								<input type="submit" name="submit" value="SUBMIT NOW">
+								<input type="submit" onclick="sendMail()" name="submit" value="SUBMIT NOW">
 							</div>
 						</div>
 					</div>
