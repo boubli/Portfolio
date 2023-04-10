@@ -37,13 +37,13 @@
       emailjs.init("Ie14xBvqGZ4JqMA1W");
    })();
 </script>
-<script src="js/main.js" ></script>
+<script src="js/main." ></script>
 </head>
 
 <body>
 	<div class="cursor"></div>
 	<nav class="navbar navbar-expand-lg navbar-light mynav">
-  		<a class="navbar-brand" href="index.html">
+  		<a class="navbar-brand" href="#">
     		<p>B O U B L I  <span class="codeT">/></span></p>
   		</a>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -66,35 +66,6 @@
     </ul>
   </div>
 	</nav>
-
-	<script type="text/javascript">
-		function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    phoneNumber: document.getElementById("phoneNumber").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
-  };
-
-  const serviceID = "Ie14xBvqGZ4JqMA1W";
-  const templateID = "_euJGwJsNdCRbClTlOLHB";
-
-    emailjs.send(serviceID, templateID, params)
-    .then(res=>{
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("phoneNumber").value = "";
-        document.getElementById("subject").value = "";
-        document.getElementById("message").value = "";
-        console.log(res);
-        alert("Your message sent successfully!!")
-
-    })
-    .catch(err=>console.log(err));
-
-}
-	</script>
 
 <div class="jumbotron mybg">
   <div class="container mytgb"><br><br>
@@ -343,36 +314,36 @@
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-user"></i>
-								<input type="text" id="name" placeholder="ENTER YOUR NAME" required>
+								<input type="text" name="name" placeholder="ENTER YOUR NAME" required>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-envelope"></i>
-								<input type="text" id="email" placeholder="ENTER YOUR EMAIL" required>
+								<input type="text" name="email" placeholder="ENTER YOUR EMAIL" required>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-phone"></i>
-								<input type="text" id="phoneNumber" placeholder="ENTER YOUR PHONE NUMBER">
+								<input type="text" name="phoneNumber" placeholder="ENTER YOUR PHONE NUMBER">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="single-input">
 								<i class="fas fa-check"></i>
-								<input type="text" id="subject" placeholder="ENTER YOUR SUBJECT">
+								<input type="text" name="subject" placeholder="ENTER YOUR SUBJECT">
 							</div>
 						</div>
 						<div class="col-12">
 							<div class="single-input">
 								<i class="fas fa-comment-dots"></i>
-								<textarea id="message" placeholder="ENTER YOUR MESSAGE" required></textarea>
+								<textarea placeholder="ENTER YOUR MESSAGE" required></textarea>
 							</div>
 						</div>
 						<div class="col-12">
 							<div class="submit-input text-center">
-								<button class="btn btn-primary" onclick="sendMail()">Submit</button>
+								<input type="submit" name="submit" value="SUBMIT NOW">
 							</div>
 						</div>
 					</div>
