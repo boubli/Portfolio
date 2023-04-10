@@ -67,6 +67,35 @@
   </div>
 	</nav>
 
+	<script type="text/javascript">
+		function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phoneNumber: document.getElementById("phoneNumber").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "Ie14xBvqGZ4JqMA1W";
+  const templateID = "_euJGwJsNdCRbClTlOLHB";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phoneNumber").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
+	</script>
+
 <div class="jumbotron mybg">
   <div class="container mytgb"><br><br>
     <h5>Start <span class="code">/></span> </h5>
